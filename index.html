@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Interview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Video Interview</h1>
+        <span id="status">Не подключено</span>
+    </header>
+
+    <main class="container">
+
+        <section class="video-container">
+
+            <div class="video-card">
+                <video id="localVideo" autoplay playsinline muted></video>
+                <div class="video-label">Вы</div>
+            </div>
+
+            <div class="video-card">
+                <video id="remoteVideo" autoplay playsinline></video>
+                <div class="video-label">Собеседник</div>
+            </div>
+
+        </section>
+
+        <section class="controls">
+            <button id="joinBtn">Подключиться</button>
+            <button id="micBtn" disabled>Выключить микрофон</button>
+            <button id="cameraBtn" disabled>Выключить камеру</button>
+            <button id="leaveBtn" disabled>Завершить звонок</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
